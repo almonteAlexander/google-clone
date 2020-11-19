@@ -1,0 +1,29 @@
+.searcher__control{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.search__input{
+    height: 45px;
+    width: 80%;
+    padding-left: 2em;
+    max-width: 450px;
+    margin: 1.5em 0;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    font-size: 17px;
+    box-shadow: 0 2.5px 5px 3px rgba(0,0,0,0.18);
+}
+.buttons__container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.control__button{
+    margin: 0 8px !important;
+    font-family: 'Roboto', 'sans-serif' !important;
+    border: none !important;
+    background: #ECECEC !important;
+}
