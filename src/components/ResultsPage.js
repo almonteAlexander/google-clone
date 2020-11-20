@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { ReactComponent as GoogleLogo } from '../img/google__logo.svg'
 import SearchControl from './SearchControl'
@@ -13,6 +13,12 @@ export default function ResultsPage(props) {
     data &&
     `About ${data.searchInformation.totalResults} 
     results (${data.searchInformation.formattedSearchTime} seconds)`;
+
+    useEffect(() => {
+        let searchControl = document.querySelector('.search__control');
+        searchControl.style.justifyContent = "flex-start";
+        searchControl.style.marginLeft = '1.5em';
+    }, [])
     return (
         <div className="results__main">
             <div className="results__header">

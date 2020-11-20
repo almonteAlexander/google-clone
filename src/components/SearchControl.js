@@ -1,6 +1,7 @@
 import React from 'react'
 import { useHistory } from 'react-router'
 import { Button } from '@material-ui/core'
+import { ReactComponent as Loupe } from '../img/loupe.svg'
 import './SearchControl.css'
 
 export default function SearchControl({ SearchValue, setSearchValue, hideButtons }) {
@@ -19,11 +20,16 @@ export default function SearchControl({ SearchValue, setSearchValue, hideButtons
     return (
         <>
           {!hideButtons ?
-            <form className="searcher__control"
+            <form className="search__control"
             onSubmit={e => handleFormSubmit(e)}>
-                 <input type="text" className="search__input" autofocus="autofocus"
-                 onChange={e => setSearchValue(e.target.value)}/>
-                
+
+                <div className="input__container">
+                    <input type="text" className="search__input" placeholder="Search on google..." 
+                     autofocus="autofocus" onChange={e => setSearchValue(e.target.value)}/>
+                    <Loupe className="loupe__svg"/>
+                </div>
+                 
+
                 <div className="buttons__container">
                     <Button className="control__button"
                     onClick={e => handleSearch()}>
@@ -33,10 +39,12 @@ export default function SearchControl({ SearchValue, setSearchValue, hideButtons
                 </div>
             </form>
             :
-            <form className="searcher__control">
-                 <input type="text" className="search__input" autofocus="autofocus"
-                 value={SearchValue}
-                 onChange={e => setSearchValue(e.target.value)}/>
+            <form className="search__control">
+                <div className="input__container">
+                    <input type="text" className="search__input" placeholder="Search on google..." 
+                     autofocus="autofocus" onChange={e => setSearchValue(e.target.value)}/>
+                    <Loupe className="loupe__svg"/>
+                </div>
             </form>
             }  
         </>

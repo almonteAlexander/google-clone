@@ -27,7 +27,6 @@ export default function App() {
                 <Redirect to="/" />
                 }
              </Route>
-
              <Redirect to="/" />
         </Switch>
       </Router>

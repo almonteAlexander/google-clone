@@ -5,3 +5,10 @@
     margin: 160px auto;
     align-items: center;
 }
+
+@media screen and (max-width: 500px){
+    .google__logo{
+        height: 80px;
+        width: 200;
+    }
+}

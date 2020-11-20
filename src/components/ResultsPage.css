@@ -5,21 +5,20 @@
 }
 .results__header{
     display: flex;
+    height: 85px;
     width: 100%;
     border-bottom: 3px solid black;
     margin-bottom: 0.5em;
 }
 .results__logo{
     height: 100px;
-    width: 150px;
-    margin: 0 0.5em;
-}
-.searcher__control{
-    max-width: 500px;
+    width: 100px;
+    margin-left: 0.5em;
 }
 .results__info{
     margin: 5px auto 0 2em;
     font-family: 'Roboto', 'sans-serif';
+    font-size: 15px;
 }
 .results__container{
     display: flex;
