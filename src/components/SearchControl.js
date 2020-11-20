@@ -25,7 +25,7 @@ export default function SearchControl({ SearchValue, setSearchValue, hideButtons
 
                 <div className="input__container">
                     <input type="text" className="search__input" placeholder="Search on google..." 
-                     autofocus="autofocus" onChange={e => setSearchValue(e.target.value)}/>
+                     autofocus="autofocus" value={SearchValue} onChange={e => setSearchValue(e.target.value)}/>
                     <Loupe className="loupe__svg"/>
                 </div>
                  
@@ -42,7 +42,7 @@ export default function SearchControl({ SearchValue, setSearchValue, hideButtons
             <form className="search__control">
                 <div className="input__container">
                     <input type="text" className="search__input" placeholder="Search on google..." 
-                     autofocus="autofocus" onChange={e => setSearchValue(e.target.value)}/>
+                     autofocus="autofocus" value={SearchValue} onChange={e => setSearchValue(e.target.value)}/>
                     <Loupe className="loupe__svg"/>
                 </div>
             </form>
