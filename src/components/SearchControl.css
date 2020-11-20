@@ -24,6 +24,7 @@
     border-radius: 30px;
     outline: none;
     font-size: 17px;
+    border: 2px solid gray;
     box-shadow: 0 2.5px 5px 3px rgba(0,0,0,0.18);
 }
 .loupe__svg{
