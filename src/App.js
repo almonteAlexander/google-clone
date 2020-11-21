@@ -2,8 +2,8 @@ import { useState } from 'react'
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 import './App.css';
 
-import Searcher from './components/Searcher'
-import ResultsPage from './components/ResultsPage'
+import Searcher from './components/Searcher/Searcher'
+import ResultsPage from './components/ResultsPage/ResultsPage'
 
 export default function App() {
   const [SearchValue, setSearchValue] = useState('');
