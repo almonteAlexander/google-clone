@@ -7,8 +7,8 @@ import './ResultsPage.css'
 import SearchControl from '../SearchControl/SearchControl'
 import Page from '../Page/Page'
 
-export default function ResultsPage(props) {
-    const { data } = useGoogleSearch(props.SearchValue);
+export default function ResultsPage({ SearchValue, setSearchValue }) {
+    const { data } = useGoogleSearch(SearchValue);
     let resultsInfo = 
     data &&
     `About ${data.searchInformation.totalResults} 
@@ -26,8 +26,8 @@ export default function ResultsPage(props) {
                     <GoogleLogo className="results__logo" />
                 </Link>
                 <SearchControl className="results__input" 
-                SearchValue={props.SearchValue} 
-                setSearchValue={props.setSearchValue}
+                SearchValue={SearchValue} 
+                setSearchValue={setSearchValue}
                 hideButtons />
             </div>
            
