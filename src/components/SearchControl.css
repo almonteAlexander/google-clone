@@ -1,0 +1,46 @@
+.search__control{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.input__container{
+    position: relative;
+    display: flex;
+    height: 45px;
+    width: 85%;
+    max-width: 450px;
+    margin: 1.5em 0 1.5em 0;
+    align-items: center;
+    justify-content: center;
+}
+.search__input{
+    height: 100%;
+    width: 100%;
+    padding: 0 3em 0 2em;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    font-size: 17px;
+    border: 2px solid gray;
+    box-shadow: 0 2.5px 5px 3px rgba(0,0,0,0.18);
+}
+.loupe__svg{
+    position: absolute;
+    right: 5%;
+}
+
+.buttons__container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: .5em;
+}
+.control__button{
+    margin: 0 8px !important;
+    font-family: 'Roboto', 'sans-serif' !important;
+    border: none !important;
+    background: #ECECEC !important;
+}
